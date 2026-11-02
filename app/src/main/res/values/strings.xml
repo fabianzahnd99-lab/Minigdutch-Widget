@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mining-Dutch Widget</string>
+    <string name="widget_name">Mining-Dutch</string>
+    <string name="widget_description">Hashrate, Worker und Guthaben von Mining-Dutch</string>
+</resources>

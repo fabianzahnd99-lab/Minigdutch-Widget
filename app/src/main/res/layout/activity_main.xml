@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mining-Dutch Widget"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="API-Key und Account-ID findest du eingeloggt auf mining-dutch.nl unter API Documentation."
+            android:textSize="13sp" />
+
+        <TextView style="@style/Label" android:text="API-Key *" />
+        <EditText
+            android:id="@+id/edt_api_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="API-Key" />
+
+        <TextView style="@style/Label" android:text="Account-ID (optional)" />
+        <EditText
+            android:id="@+id/edt_account_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="z. B. 12345" />
+
+        <TextView style="@style/Label" android:text="Pool / Algorithmus" />
+        <EditText
+            android:id="@+id/edt_pool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="sha256, bitcoin, scrypt …" />
+
+        <TextView style="@style/Label" android:text="Einheit, in der die API die Hashrate liefert" />
+        <Spinner
+            android:id="@+id/spn_unit"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+
+        <TextView style="@style/Label" android:text="Währung für Guthaben" />
+        <EditText
+            android:id="@+id/edt_currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapCharacters"
+            android:hint="BTC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_test"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Testen" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Speichern" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:textIsSelectable="true"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Widget hinzufügen: Homescreen lange drücken → Widgets → Mining-Dutch. Aktualisiert sich alle 15 Min. oder per ↻."
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
